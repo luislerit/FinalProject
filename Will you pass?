@@ -1,0 +1,1745 @@
+/*
+Author: Jose Mari Luis L. Lerit and Alexis Go
+Title: Will you pass?
+Description: A Grade computing program which helps to solve for the needed final exam score
+Last Date Modified: August 19, 2014
+
+*/
+
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+#include<conio.h>
+#include <windows.h>
+
+
+void two();
+void three();
+void four();
+void five();
+
+
+void twocasea();
+void twocaseb();
+void twocasec();
+
+
+void threecasea();
+void threecaseb();
+void threecasec();
+
+
+
+void fourcasea();
+void fourcaseb();
+void fourcasec();
+
+
+
+void fivecasea();
+void fivecaseb();
+void fivecasec();
+
+
+
+
+main()
+{
+      char choice;
+      char pick;
+      
+      while(1)
+      {
+      printf("____________________\n");
+      printf("\n  Will You Pass?\n");
+      printf("____________________\n\n");
+      printf("\nChoose number of quizzes:\n\n");
+      
+      printf("A. Two Quizzes \n");
+      printf("B. Three Quizzes \n");
+      printf("C. Four Quizzes \n");
+      printf("D. Five Quizzes \n");
+      printf("Q. Exit \n\n");
+      
+      printf("Enter Choice: \n");
+      scanf("%c",&choice);
+      
+      
+      switch(choice)
+      {
+                    case 'A':
+                    case 'a':
+                         system("cls");
+                         
+                         two();
+                         getchar();
+                         break;
+                        
+                    case 'B':
+                    case 'b':
+                         system("cls");
+                         three();
+                        
+                         getchar();
+                         break;
+                         
+                    case 'C':
+                    case 'c':
+                         system("cls");
+                         four();
+                         
+                         getchar();
+                         break;
+                         
+                    case 'D':
+                    case 'd':
+                         system("cls");
+                         five();
+                         getchar();
+                         break;
+                         
+                    
+                    case 'Q':
+                    case 'q':
+                         
+                         break;
+                         
+                         
+                  default: 
+                  printf("\n Invalid selection\n");
+                  getchar();
+                  return main();        
+    } 
+
+    
+    if (choice == 'Q' || choice == 'q')
+       break; 
+    } 
+    printf("\n Good Bye ...\n");
+   exit(0);   
+}
+
+  
+//for two quizzes only
+void two()
+{
+
+      char let;
+      
+      
+     printf("Passing rate: \n");
+     printf("\n A. 50 \n");
+     printf("\n B. 55 \n");
+     printf("\n C. 60 \n");
+     
+     
+     printf("\nEnter Choice: \n");
+     
+     while(1)
+     {
+    scanf("%c",&let);
+    
+    
+              switch(let)
+              {
+                         case 'A':
+                         case 'a':
+                              system("cls");
+                              twocasea();
+                              getchar();
+                              break;
+                         case 'B':
+                         case 'b':
+                              system("cls");
+                              twocaseb();
+                              getchar();
+                              break;
+                         case 'C':
+                         case 'c':
+                              system("cls");
+                              twocasec();
+                              getchar();
+                              break;
+                        
+                              
+                              
+                       
+                              }
+     }
+     }
+void twocasea()
+{   
+    float a,b,c,x;
+    float d,e,f,g,y;
+    float h,i,z;
+    
+     
+    printf("\nEnter desired Final Grade: ");
+    scanf("%f",&a);
+    printf("\nEnter Quiz Percentage: ");
+    scanf("%f",&b);
+    printf("\nEnter Output Percentage: ");
+    scanf("%f",&c);
+    
+    printf("\nEnter Quiz 1 Grade: ");
+    scanf("%f",&d);
+    printf("\nEnter Quiz 2 Grade: ");
+    scanf("%f",&e);
+    printf("\nEnter Output Grade: ");
+    scanf("%f",&f);
+    
+    printf("\n\nIf there is additional output just enter the values below, else input zero\n");
+    printf("\nEnter Additional Output Percentage : ");
+    scanf("%f",&x);
+    printf("\nEnter Additional Output Grade: ");
+    scanf("%f",&y);
+    
+    
+   
+    if (a==1.0){
+    
+    h=((d+e)/2)*(b/100);
+    
+    i=(100)-(b+c+x);
+    
+    z=y*(x/100);
+    
+    g=(50-(h+f+z))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+
+    else if (a==1.5)
+    {
+    h=((d+e)/2)*(b/100);
+    
+    i=(100)-(b+c+x);
+    
+    z=y*(x/100);
+    
+    g=(59-(h+f+z))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+    else if (a==2.0)
+    {
+   h=((d+e)/2)*(b/100);
+    
+    i=(100)-(b+c+x);
+    
+    z=y*(x/100);
+    
+    g=(66-(h+f+z))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+else if (a==2.5)
+    {
+    h=((d+e)/2)*(b/100);
+    
+    i=(100)-(b+c+x);
+    
+    z=y*(x/100);
+    
+    g=(73-(h+f+z))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+else if (a==3.0)
+    {
+    h=((d+e)/2)*(b/100);
+    
+    i=(100)-(b+c+x);
+    
+    z=y*(x/100);
+    
+    g=(80-(h+f+z))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+else if (a==3.5)
+    {
+    h=((d+e)/2)*(b/100);
+    
+    i=(100)-(b+c+x);
+    
+    z=y*(x/100);
+    
+    g=(87-(h+f+z))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+else if (a==4.0)
+    {
+    h=((d+e)/2)*(b/100);
+    
+    i=(100)-(b+c+x);
+    
+    z=y*(x/100);
+    
+    g=(94-(h+f+z))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+printf("\n");
+printf("\n");
+system("PAUSE");
+    
+system("cls");
+main();
+
+}     
+     
+
+     
+void twocaseb()
+{   
+    float a,b,c,x;
+    float d,e,f,g,y;
+    float h,i,z;
+    
+     
+    printf("\nEnter desired Final Grade: ");
+    scanf("%f",&a);
+    printf("\nEnter Quiz Percentage: ");
+    scanf("%f",&b);
+    printf("\nEnter Output Percentage: ");
+    scanf("%f",&c);
+    
+    printf("\nEnter Quiz 1 Grade: ");
+    scanf("%f",&d);
+    printf("\nEnter Quiz 2 Grade: ");
+    scanf("%f",&e);
+    printf("\nEnter Output Grade: ");
+    scanf("%f",&f);
+    
+   printf("\n\nIf there is additional output just enter the values below, else input zero\n");
+    printf("\nEnter Additional Output Percentage : ");
+    scanf("%f",&x);
+    printf("\nEnter Additional Output Grade: ");
+    scanf("%f",&y);
+   
+    if (a==1.0){
+    
+   h=((d+e)/2)*(b/100);
+    
+    i=(100)-(b+c+x);
+    
+    z=y*(x/100);
+    
+    g=(55-(h+f+z))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+
+    else if (a==1.5)
+    {
+    h=((d+e)/2)*(b/100);
+    
+    i=(100)-(b+c+x);
+    
+    z=y*(x/100);
+    
+    g=(62-(h+f+z))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+    else if (a==2.0)
+    {
+    h=((d+e)/2)*(b/100);
+    
+    i=(100)-(b+c+x);
+    
+    z=y*(x/100);
+    
+    g=(69-(h+f+z))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+else if (a==2.5)
+    {
+   h=((d+e)/2)*(b/100);
+    
+    i=(100)-(b+c+x);
+    
+    z=y*(x/100);
+    
+    g=(75-(h+f+z))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+else if (a==3.0)
+    {
+    h=((d+e)/2)*(b/100);
+    
+    i=(100)-(b+c+x);
+    
+    z=y*(x/100);
+    
+    g=(82-(h+f+z))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+else if (a==3.5)
+    {
+   h=((d+e)/2)*(b/100);
+    
+    i=(100)-(b+c+x);
+    
+    z=y*(x/100);
+    
+    g=(88-(h+f+z))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+else if (a==4.0)
+    {
+   h=((d+e)/2)*(b/100);
+    
+    i=(100)-(b+c+x);
+    
+    z=y*(x/100);
+    
+    g=(94-(h+f+z))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+printf("\n");
+printf("\n");
+system("PAUSE");
+    
+system("cls");
+main();
+
+}
+
+void twocasec()
+{   
+    float a,b,c,x;
+    float d,e,f,g,y;
+    float h,i,z;
+    
+     
+    printf("\nEnter desired Final Grade: ");
+    scanf("%f",&a);
+    printf("\nEnter Quiz Percentage: ");
+    scanf("%f",&b);
+    printf("\nEnter Output Percentage: ");
+    scanf("%f",&c);
+    
+    printf("\nEnter Quiz 1 Grade: ");
+    scanf("%f",&d);
+    printf("\nEnter Quiz 2 Grade: ");
+    scanf("%f",&e);
+    printf("\nEnter Output Grade: ");
+    scanf("%f",&f);
+    
+    printf("\n\nIf there is additional output just enter the values below, else input zero\n");
+    printf("\nEnter Additional Output Percentage : ");
+    scanf("%f",&x);
+    printf("\nEnter Additional Output Grade: ");
+    scanf("%f",&y);
+   
+    if (a==1.0){
+     h=((d+e)/2)*(b/100);
+    
+    i=(100)-(b+c+x);
+    
+    z=y*(x/100);
+    
+    g=(60-(h+f+z))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+  
+}
+
+    else if (a==1.5)
+    {
+    h=((d+e)/2)*(b/100);
+    
+    i=(100)-(b+c+x);
+    
+    z=y*(x/100);
+    
+    g=(65-(h+f+z))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+    else if (a==2.0)
+    {
+    h=((d+e)/2)*(b/100);
+    
+    i=(100)-(b+c+x);
+    
+    z=y*(x/100);
+    
+    g=(70-(h+f+z))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+else if (a==2.5)
+    {
+    h=((d+e)/2)*(b/100);
+    
+    i=(100)-(b+c+x);
+    
+    z=y*(x/100);
+    
+    g=(76-(h+f+z))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+else if (a==3.0)
+    {
+    h=((d+e)/2)*(b/100);
+    
+    i=(100)-(b+c+x);
+    
+    z=y*(x/100);
+    
+    g=(82-(h+f+z))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+else if (a==3.5)
+    {
+    h=((d+e)/2)*(b/100);
+    
+    i=(100)-(b+c+x);
+    
+    z=y*(x/100);
+    
+    g=(88-(h+f+z))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+else if (a==4.0)
+    {
+   h=((d+e)/2)*(b/100);
+    
+    i=(100)-(b+c+x);
+    
+    z=y*(x/100);
+    
+    g=(94-(h+f+z))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+printf("\n");
+printf("\n");
+system("PAUSE");
+    
+system("cls");
+main();
+
+}
+
+ 
+//two quizzes ends here
+
+// three quizzes starts here
+
+void three()
+{
+
+      char let;
+      
+      
+     printf("Passing rate: \n");
+     printf("\n A. 50 \n");
+     printf("\n B. 55 \n");
+     printf("\n C. 60 \n");
+     
+     printf("\nEnter Choice: \n");
+     
+     while(1)
+     {
+    scanf("%c",&let);
+    
+    
+              switch(let)
+              {
+                         case 'A':
+                         case 'a':
+                              system("cls");
+                              threecasea();
+                              getchar();
+                              break;
+                         case 'B':
+                         case 'b':
+                              system("cls");
+                              threecaseb();
+                              getchar();
+                              break;
+                         case 'C':
+                         case 'c':
+                              system("cls");
+                              threecasec();
+                              getchar();
+                              break;
+                              
+                         
+                              }
+     }
+}
+void threecasea()
+{   
+    float a,b,c,x;
+    float d,e,f,g,y;
+    float h,i,z;
+    float j;
+    
+     
+    printf("\nEnter desired Final Grade: ");
+    scanf("%f",&a);
+    printf("\nEnter Quiz Percentage: ");
+    scanf("%f",&b);
+    printf("\nEnter Output Percentage: ");
+    scanf("%f",&c);
+   
+    printf("\nEnter Quiz 1 Grade: ");
+    scanf("%f",&d);
+    printf("\nEnter Quiz 2 Grade: ");
+    scanf("%f",&e);
+    printf("\nEnter Quiz 3 Grade: ");
+    scanf("%f",&j);
+    printf("\nEnter Output Grade: ");
+    scanf("%f",&f);
+    
+    printf("\n\nIf there is additional output just enter the values below, else input zero\n");
+    printf("\nEnter Additional Output Percentage : ");
+    scanf("%f",&x);
+    printf("\nEnter Additional Output Grade: ");
+    scanf("%f",&y);
+    
+   
+    if (a==1.0){
+    
+    h=((d+e+j)/3)*(b/100);
+    
+    z= y*(x/100);
+    
+    i=(100)-(b+c+x);
+    
+    g=(50-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+
+    else if (a==1.5)
+    {
+     h=((d+e+j)/3)*(b/100);
+    
+    z= y*(x/100);
+    
+    i=(100)-(b+c+x);
+    
+    g=(59-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+    else if (a==2.0)
+    {
+     h=((d+e+j)/3)*(b/100);
+    
+    z= y*(x/100);
+    
+    i=(100)-(b+c+x);
+    
+    g=(66-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+else if (a==2.5)
+    {
+     h=((d+e+j)/3)*(b/100);
+    
+    z= y*(x/100);
+    
+    i=(100)-(b+c+x);
+    
+    g=(73-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+else if (a==3.0)
+    {
+    h=((d+e+j)/3)*(b/100);
+    
+    z= y*(x/100);
+    
+    i=(100)-(b+c+x);
+    
+    g=(80-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+else if (a==3.5)
+    {
+     h=((d+e+j)/3)*(b/100);
+    
+    z= y*(x/100);
+    
+    i=(100)-(b+c+x);
+    
+    g=(87-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+else if (a==4.0)
+    {
+    h=((d+e+j)/3)*(b/100);
+    
+    z= y*(x/100);
+    
+    i=(100)-(b+c+x);
+    
+    g=(94-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+printf("\n");
+printf("\n");
+system("PAUSE");
+    
+system("cls");
+main();
+
+}     
+     
+
+     
+void threecaseb()
+{   
+    float a,b,c,x;
+    float d,e,f,g,y;
+    float h,i,z;
+    float j;
+    
+     
+    printf("\nEnter desired Final Grade: ");
+    scanf("%f",&a);
+    printf("\nEnter Quiz Percentage: ");
+    scanf("%f",&b);
+    printf("\nEnter Output Percentage: ");
+    scanf("%f",&c);
+   
+    printf("\nEnter Quiz 1 Grade: ");
+    scanf("%f",&d);
+    printf("\nEnter Quiz 2 Grade: ");
+    scanf("%f",&e);
+    printf("\nEnter Quiz 3 Grade: ");
+    scanf("%f",&j);
+    printf("\nEnter Output Grade: ");
+    scanf("%f",&f);
+    
+    printf("\n\nIf there is additional output just enter the values below, else input zero\n");
+    printf("\nEnter Additional Output Percentage : ");
+    scanf("%f",&x);
+    printf("\nEnter Additional Output Grade: ");
+    scanf("%f",&y);
+   
+    if (a==1.0){
+    
+ h=((d+e+j)/3)*(b/100);
+    
+    z= y*(x/100);
+    
+    i=(100)-(b+c+x);
+    
+    g=(55-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+
+    else if (a==1.5)
+    {
+   h=((d+e+j)/3)*(b/100);
+    
+    z= y*(x/100);
+    
+    i=(100)-(b+c+x);
+    
+    g=(62-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+    else if (a==2.0)
+    {
+    h=((d+e+j)/3)*(b/100);
+    
+    z= y*(x/100);
+    
+    i=(100)-(b+c+x);
+    
+    g=(69-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+else if (a==2.5)
+    {
+    h=((d+e+j)/3)*(b/100);
+    
+    z= y*(x/100);
+    
+    i=(100)-(b+c+x);
+    
+    g=(75-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+else if (a==3.0)
+    {
+   h=((d+e+j)/3)*(b/100);
+    
+    z= y*(x/100);
+    
+    i=(100)-(b+c+x);
+    
+    g=(82-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+else if (a==3.5)
+    {
+    h=((d+e+j)/3)*(b/100);
+    
+    z= y*(x/100);
+    
+    i=(100)-(b+c+x);
+    
+    g=(88-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+else if (a==4.0)
+    {
+    h=((d+e+j)/3)*(b/100);
+    
+    z= y*(x/100);
+    
+    i=(100)-(b+c+x);
+    
+    g=(94-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+printf("\n");
+printf("\n");
+system("PAUSE");
+    
+system("cls");
+main();
+
+}
+
+void threecasec()
+{   
+    
+    float a,b,c,x;
+    float d,e,f,g,y;
+    float h,i,z;
+    float j;
+    
+     
+    printf("\nEnter desired Final Grade: ");
+    scanf("%f",&a);
+    printf("\nEnter Quiz Percentage: ");
+    scanf("%f",&b);
+    printf("\nEnter Output Percentage: ");
+    scanf("%f",&c);
+    
+    printf("\nEnter Quiz 1 Grade: ");
+    scanf("%f",&d);
+    printf("\nEnter Quiz 2 Grade: ");
+    scanf("%f",&e);
+    printf("\nEnter Quiz 3 Grade: ");
+    scanf("%f",&j);
+    printf("\nEnter Output Grade: ");
+    scanf("%f",&f);
+    
+    
+    printf("\n\nIf there is additional output just enter the values below, else input zero\n");
+    printf("\nEnter Additional Output Percentage : ");
+    scanf("%f",&x);
+    printf("\nEnter Additional Output Grade: ");
+    scanf("%f",&y);
+   
+    if (a==1.0){
+    
+  h=((d+e+j)/3)*(b/100);
+    
+    z= y*(x/100);
+    
+    i=(100)-(b+c+x);
+    
+    g=(60-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+
+    else if (a==1.5)
+    {
+    h=((d+e+j)/3)*(b/100);
+    
+    z= y*(x/100);
+    
+    i=(100)-(b+c+x);
+    
+    g=(65-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+    else if (a==2.0)
+    {
+    h=((d+e+j)/3)*(b/100);
+    
+    z= y*(x/100);
+    
+    i=(100)-(b+c+x);
+    
+    g=(70-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+else if (a==2.5)
+    {
+    h=((d+e+j)/3)*(b/100);
+    
+    z= y*(x/100);
+    
+    i=(100)-(b+c+x);
+    
+    g=(76-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+else if (a==3.0)
+    {
+   h=((d+e+j)/3)*(b/100);
+    
+    z= y*(x/100);
+    
+    i=(100)-(b+c+x);
+    
+    g=(82-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+else if (a==3.5)
+    {
+    h=((d+e+j)/3)*(b/100);
+    
+    z= y*(x/100);
+    
+    i=(100)-(b+c+x);
+    
+    g=(88-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+else if (a==4.0)
+    {
+    h=((d+e+j)/3)*(b/100);
+    
+    z= y*(x/100);
+    
+    i=(100)-(b+c+x);
+    
+    g=(94-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+printf("\n");
+printf("\n");
+system("PAUSE");
+    
+system("cls");
+main();
+
+}
+
+// three quizzes ends here
+
+// Four Quizzes starts here
+void four()
+{
+
+      char let;
+      
+      
+     printf("Passing rate: \n");
+     printf("\n A. 50 \n");
+     printf("\n B. 55 \n");
+     printf("\n C. 60 \n");
+     
+     printf("\nEnter Choice: \n");
+     
+     while(1)
+     {
+    scanf("%c",&let);
+    
+    
+              switch(let)
+              {
+                         case 'A':
+                         case 'a':
+                              system("cls");
+                              fourcasea();
+                              getchar();
+                              break;
+                         case 'B':
+                         case 'b':
+                              system("cls");
+                              fourcaseb();
+                              getchar();
+                              break;
+                         case 'C':
+                         case 'c':
+                              system("cls");
+                              fourcasec();
+                              getchar();
+                              break;
+                              
+                       
+                              }
+     }
+}
+void fourcasea()
+{   
+    float a,b,c,x;
+    float d,e,f,g,y;
+    float h,i,z;
+    float j,k;
+    
+     
+    printf("\nEnter desired Final Grade: ");
+    scanf("%f",&a);
+    printf("\nEnter Quiz Percentage: ");
+    scanf("%f",&b);
+    printf("\nEnter Output Percentage: ");
+    scanf("%f",&c);
+    
+    printf("\nEnter Quiz 1 Grade: ");
+    scanf("%f",&d);
+    printf("\nEnter Quiz 2 Grade: ");
+    scanf("%f",&e);
+    printf("\nEnter Quiz 3 Grade: ");
+    scanf("%f",&j);
+    printf("\nEnter Quiz 4 Grade: ");
+    scanf("%f",&k);
+    printf("\nEnter Output Grade: ");
+    scanf("%f",&f);
+    
+    printf("\n\nIf there is additional output just enter the values below, else input zero\n");
+    printf("\nEnter Additional Output Percentage : ");
+    scanf("%f",&x);
+    printf("\nEnter Additional Output Grade: ");
+    scanf("%f",&y);
+    
+   
+    if (a==1.0){
+    
+    h=((d+e+j+k)/4)*(b/100);
+    
+    i=(100)-(b+c+x);
+    
+    z=y*(x/100);
+    
+    g=(50-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+
+    else if (a==1.5)
+    {
+     h=((d+e+j+k)/4)*(b/100);
+    
+    i=(100)-(b+c+x);
+    
+    z=y*(x/100);
+    
+    g=(59-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+    else if (a==2.0)
+    {
+   h=((d+e+j+k)/4)*(b/100);
+    
+    i=(100)-(b+c+x);
+    
+    z=y*(x/100);
+    
+    g=(66-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+else if (a==2.5)
+    {
+   h=((d+e+j+k)/4)*(b/100);
+    
+    i=(100)-(b+c+x);
+    
+    z=y*(x/100);
+    
+    g=(73-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+else if (a==3.0)
+    {
+   h=((d+e+j+k)/4)*(b/100);
+    
+    i=(100)-(b+c+x);
+    
+    z=y*(x/100);
+    
+    g=(80-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+else if (a==3.5)
+    {
+   h=((d+e+j+k)/4)*(b/100);
+    
+    i=(100)-(b+c+x);
+    
+    z=y*(x/100);
+    
+    g=(87-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+else if (a==4.0)
+    {
+    h=((d+e+j+k)/4)*(b/100);
+    
+    i=(100)-(b+c+x);
+    
+    z=y*(x/100);
+    
+    g=(94-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+printf("\n");
+printf("\n");
+system("PAUSE");
+    
+system("cls");
+main();
+
+}     
+     
+
+     
+void fourcaseb()
+{   
+    float a,b,c,x;
+    float d,e,f,g,y;
+    float h,i,z;
+    float j,k;
+    
+     
+    printf("\nEnter desired Final Grade: ");
+    scanf("%f",&a);
+    printf("\nEnter Quiz Percentage: ");
+    scanf("%f",&b);
+    printf("\nEnter Output Percentage: ");
+    scanf("%f",&c);
+    
+    printf("\nEnter Quiz 1 Grade: ");
+    scanf("%f",&d);
+    printf("\nEnter Quiz 2 Grade: ");
+    scanf("%f",&e);
+    printf("\nEnter Quiz 3 Grade: ");
+    scanf("%f",&j);
+    printf("\nEnter Quiz 4 Grade: ");
+    scanf("%f",&k);
+    printf("\nEnter Output Grade: ");
+    scanf("%f",&f);
+    
+    
+    printf("\n\nIf there is additional output just enter the values below, else input zero\n");
+    printf("\nEnter Additional Output Percentage : ");
+    scanf("%f",&x);
+    printf("\nEnter Additional Output Grade: ");
+    scanf("%f",&y);
+    
+   
+    if (a==1.0){
+    
+  h=((d+e+j+k)/4)*(b/100);
+    
+    i=(100)-(b+c+x);
+    
+    z=y*(x/100);
+    
+    g=(55-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+
+    else if (a==1.5)
+    {
+  h=((d+e+j+k)/4)*(b/100);
+    
+    i=(100)-(b+c+x);
+    
+    z=y*(x/100);
+    
+    g=(62-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+    else if (a==2.0)
+    {
+    h=((d+e+j+k)/4)*(b/100);
+    
+    i=(100)-(b+c+x);
+    
+    z=y*(x/100);
+    
+    g=(69-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+else if (a==2.5)
+    {
+    h=((d+e+j+k)/4)*(b/100);
+    
+    i=(100)-(b+c+x);
+    
+    z=y*(x/100);
+    
+    g=(75-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+else if (a==3.0)
+    {
+  h=((d+e+j+k)/4)*(b/100);
+    
+    i=(100)-(b+c+x);
+    
+    z=y*(x/100);
+    
+    g=(82-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+else if (a==3.5)
+    {
+    h=((d+e+j+k)/4)*(b/100);
+    
+    i=(100)-(b+c+x);
+    
+    z=y*(x/100);
+    
+    g=(88-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+else if (a==4.0)
+    {
+h=((d+e+j+k)/4)*(b/100);
+    
+    i=(100)-(b+c+x);
+    
+    z=y*(x/100);
+    
+    g=(94-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+printf("\n");
+printf("\n");
+system("PAUSE");
+    
+system("cls");
+main();
+
+}
+
+void fourcasec()
+{   
+    float a,b,c,x;
+    float d,e,f,g,y;
+    float h,i,z;
+    float j,k;
+    
+     
+    printf("\nEnter desired Final Grade: ");
+    scanf("%f",&a);
+    printf("\nEnter Quiz Percentage: ");
+    scanf("%f",&b);
+    printf("\nEnter Output Percentage: ");
+    scanf("%f",&c);
+  
+    printf("\nEnter Quiz 1 Grade: ");
+    scanf("%f",&d);
+    printf("\nEnter Quiz 2 Grade: ");
+    scanf("%f",&e);
+    printf("\nEnter Quiz 3 Grade: ");
+    scanf("%f",&j);
+    printf("\nEnter Quiz 4 Grade: ");
+    scanf("%f",&k);
+    printf("\nEnter Output Grade: ");
+    scanf("%f",&f);
+   
+   printf("\n\nIf there is additional output just enter the values below, else input zero\n");
+    printf("\nEnter Additional Output Percentage : ");
+    scanf("%f",&x);
+    printf("\nEnter Additional Output Grade: ");
+    scanf("%f",&y);
+    
+   
+    if (a==1.0){
+    
+   h=((d+e+j+k)/4)*(b/100);
+    
+    i=(100)-(b+c+x);
+    
+    z=y*(x/100);
+    
+    g=(60-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+
+    else if (a==1.5)
+    {
+   h=((d+e+j+k)/4)*(b/100);
+    
+    i=(100)-(b+c+x);
+    
+    z=y*(x/100);
+    
+    g=(65-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+    else if (a==2.0)
+    {
+  h=((d+e+j+k)/4)*(b/100);
+    
+    i=(100)-(b+c+x);
+    
+    z=y*(x/100);
+    
+    g=(70-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+else if (a==2.5)
+    {
+    h=((d+e+j+k)/4)*(b/100);
+    
+    i=(100)-(b+c+x);
+    
+    z=y*(x/100);
+    
+    g=(76-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+else if (a==3.0)
+    {
+    h=((d+e+j+k)/4)*(b/100);
+    
+    i=(100)-(b+c+x);
+    
+    z=y*(x/100);
+    
+    g=(82-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+else if (a==3.5)
+    {
+    h=((d+e+j+k)/4)*(b/100);
+    
+    i=(100)-(b+c+x);
+    
+    z=y*(x/100);
+    
+    g=(88-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+else if (a==4.0)
+    {
+    h=((d+e+j+k)/4)*(b/100);
+    
+    i=(100)-(b+c+x);
+    
+    z=y*(x/100);
+    
+    g=(94-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+printf("\n");
+printf("\n");
+system("PAUSE");
+    
+system("cls");
+main();
+
+}
+//four quizzes ends here     
+// five quizzes starts here
+
+void five()
+{
+
+      char let;
+      
+      
+     printf("Passing rate: \n");
+     printf("\n A. 50 \n");
+     printf("\n B. 55 \n");
+     printf("\n C. 60 \n");
+     
+     printf("\nEnter Choice: \n");
+     
+     while(1)
+     {
+    scanf("%c",&let);
+    
+    
+              switch(let)
+              {
+                         case 'A':
+                         case 'a':
+                              system("cls");
+                              fivecasea();
+                              getchar();
+                              break;
+                         case 'B':
+                         case 'b':
+                              system("cls");
+                              fivecaseb();
+                              getchar();
+                              break;
+                         case 'C':
+                         case 'c':
+                              system("cls");
+                              fivecasec();
+                              getchar();
+                              break;
+                              
+                       
+                              }
+     }
+}
+void fivecasea()
+{   
+    float a,b,c,x;
+    float d,e,f,g,y;
+    float h,i,z;
+    float j,k,l;
+    
+     
+    printf("\nEnter desired Final Grade: ");
+    scanf("%f",&a);
+    printf("\nEnter Quiz Percentage: ");
+    scanf("%f",&b);
+    printf("\nEnter Output Percentage: ");
+    scanf("%f",&c);
+   
+    printf("\nEnter Quiz 1 Grade: ");
+    scanf("%f",&d);
+    printf("\nEnter Quiz 2 Grade: ");
+    scanf("%f",&e);
+    printf("\nEnter Quiz 3 Grade: ");
+    scanf("%f",&j);
+    printf("\nEnter Quiz 4 Grade: ");
+    scanf("%f",&k);
+    printf("\nEnter Quiz 5 Grade: ");
+    scanf("%f",&l);
+    printf("\nEnter Output Grade: ");
+    scanf("%f",&f);
+    
+   printf("\n\nIf there is additional output just enter the values below, else input zero\n");
+    printf("\nEnter Additional Output Percentage : ");
+    scanf("%f",&x);
+    printf("\nEnter Additional Output Grade: ");
+    scanf("%f",&y);
+    
+   
+    if (a==1.0){
+    
+    h=((d+e+j+k+l)/5)*(b/100);
+    
+    z=y*(x/100);
+    
+    i=(100)-(b+c+x);
+    
+    g=(50-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+
+    else if (a==1.5)
+    {
+    h=((d+e+j+k+l)/5)*(b/100);
+    
+    z=y*(x/100);
+    
+    i=(100)-(b+c+x);
+    
+    g=(59-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+    else if (a==2.0)
+    {
+   h=((d+e+j+k+l)/5)*(b/100);
+    
+    z=y*(x/100);
+    
+    i=(100)-(b+c+x);
+    
+    g=(66-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+else if (a==2.5)
+    {
+ h=((d+e+j+k+l)/5)*(b/100);
+    
+    z=y*(x/100);
+    
+    i=(100)-(b+c+x);
+    
+    g=(73-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+else if (a==3.0)
+    {
+   h=((d+e+j+k+l)/5)*(b/100);
+    
+    z=y*(x/100);
+    
+    i=(100)-(b+c+x);
+    
+    g=(80-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+else if (a==3.5)
+    {
+  h=((d+e+j+k+l)/5)*(b/100);
+    
+    z=y*(x/100);
+    
+    i=(100)-(b+c+x);
+    
+    g=(87-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+else if (a==4.0)
+    {
+    h=((d+e+j+k+l)/5)*(b/100);
+    
+    z=y*(x/100);
+    
+    i=(100)-(b+c+x);
+    
+    g=(94-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+printf("\n");
+printf("\n");
+system("PAUSE");
+    
+system("cls");
+main();
+
+}     
+     
+
+     
+void fivecaseb()
+{   
+    float a,b,c,x;
+    float d,e,f,g,y;
+    float h,i,z;
+    float j,k,l;
+    
+     
+    printf("\nEnter desired Final Grade: ");
+    scanf("%f",&a);
+    printf("\nEnter Quiz Percentage: ");
+    scanf("%f",&b);
+    printf("\nEnter Output Percentage: ");
+    scanf("%f",&c);
+   
+    printf("\nEnter Quiz 1 Grade: ");
+    scanf("%f",&d);
+    printf("\nEnter Quiz 2 Grade: ");
+    scanf("%f",&e);
+    printf("\nEnter Quiz 3 Grade: ");
+    scanf("%f",&j);
+    printf("\nEnter Quiz 4 Grade: ");
+    scanf("%f",&k);
+    printf("\nEnter Quiz 5 Grade: ");
+    scanf("%f",&l);
+    printf("\nEnter Output Grade: ");
+    scanf("%f",&f);
+    
+    printf("\n\nIf there is additional output just enter the values below, else input zero\n");
+    printf("\nEnter Additional Output Percentage : ");
+    scanf("%f",&x);
+    printf("\nEnter Additional Output Grade: ");
+    scanf("%f",&y);
+   
+    if (a==1.0){
+    
+   h=((d+e+j+k+l)/5)*(b/100);
+    
+    z=y*(x/100);
+    
+    i=(100)-(b+c+x);
+    
+    g=(55-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+
+    else if (a==1.5)
+    {
+   h=((d+e+j+k+l)/5)*(b/100);
+    
+    z=y*(x/100);
+    
+    i=(100)-(b+c+x);
+    
+    g=(62-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+    else if (a==2.0)
+    {
+     h=((d+e+j+k+l)/5)*(b/100);
+    
+    z=y*(x/100);
+    
+    i=(100)-(b+c+x);
+    
+    g=(69-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+else if (a==2.5)
+    {
+     h=((d+e+j+k+l)/5)*(b/100);
+    
+    z=y*(x/100);
+    
+    i=(100)-(b+c+x);
+    
+    g=(75-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+else if (a==3.0)
+    {
+  h=((d+e+j+k+l)/5)*(b/100);
+    
+    z=y*(x/100);
+    
+    i=(100)-(b+c+x);
+    
+    g=(82-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+else if (a==3.5)
+    {
+ h=((d+e+j+k+l)/5)*(b/100);
+    
+    z=y*(x/100);
+    
+    i=(100)-(b+c+x);
+    
+    g=(88-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+else if (a==4.0)
+    {
+ h=((d+e+j+k+l)/5)*(b/100);
+    
+    z=y*(x/100);
+    
+    i=(100)-(b+c+x);
+    
+    g=(94-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+printf("\n");
+printf("\n");
+system("PAUSE");
+    
+system("cls");
+main();
+
+}
+
+void fivecasec()
+{   
+    float a,b,c,x;
+    float d,e,f,g,y;
+    float h,i,z;
+    float j,k,l;
+    
+     
+    printf("\nEnter desired Final Grade: ");
+    scanf("%f",&a);
+    printf("\nEnter Quiz Percentage: ");
+    scanf("%f",&b);
+    printf("\nEnter Output Percentage: ");
+    scanf("%f",&c);
+    
+    printf("\nEnter Quiz 1 Grade: ");
+    scanf("%f",&d);
+    printf("\nEnter Quiz 2 Grade: ");
+    scanf("%f",&e);
+    printf("\nEnter Quiz 3 Grade: ");
+    scanf("%f",&j);
+    printf("\nEnter Quiz 4 Grade: ");
+    scanf("%f",&k);
+    printf("\nEnter Quiz 5 Grade: ");
+    scanf("%f",&l);
+    printf("\nEnter Output Grade: ");
+    scanf("%f",&f);
+    
+    printf("\n\nIf there is additional output just enter the values below, else input zero\n");
+    printf("\nEnter Additional Output Percentage : ");
+    scanf("%f",&x);
+    printf("\nEnter Additional Output Grade: ");
+    scanf("%f",&y);
+    
+   
+    if (a==1.0){
+    
+  h=((d+e+j+k+l)/5)*(b/100);
+    
+    z=y*(x/100);
+    
+    i=(100)-(b+c+x);
+    
+    g=(60-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+
+    else if (a==1.5)
+    {
+   h=((d+e+j+k+l)/5)*(b/100);
+    
+    z=y*(x/100);
+    
+    i=(100)-(b+c+x);
+    
+    g=(65-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+    else if (a==2.0)
+    {
+  h=((d+e+j+k+l)/5)*(b/100);
+    
+    z=y*(x/100);
+    
+    i=(100)-(b+c+x);
+    
+    g=(70-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+else if (a==2.5)
+    {
+    h=((d+e+j+k+l)/5)*(b/100);
+    
+    z=y*(x/100);
+    
+    i=(100)-(b+c+x);
+    
+    g=(76-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+else if (a==3.0)
+    {
+   h=((d+e+j+k+l)/5)*(b/100);
+    
+    z=y*(x/100);
+    
+    i=(100)-(b+c+x);
+    
+    g=(82-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+else if (a==3.5)
+    {
+    h=((d+e+j+k+l)/5)*(b/100);
+    
+    z=y*(x/100);
+    
+    i=(100)-(b+c+x);
+    
+    g=(88-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+else if (a==4.0)
+    {
+   h=((d+e+j+k+l)/5)*(b/100);
+    
+    z=y*(x/100);
+    
+    i=(100)-(b+c+x);
+    
+    g=(94-(h+f))/(i/100);
+    printf("\n\n\t Needed grade for final exam is: %.1f/100 \n",g);
+}
+printf("\n");
+printf("\n");
+system("PAUSE");
+    
+system("cls");
+main();
+
+}
+
+
+     
+     
+   
